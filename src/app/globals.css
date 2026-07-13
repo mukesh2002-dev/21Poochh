@@ -89,19 +89,19 @@ html {
   background-clip: text;
 }
 
-.shadow-card {
+@utility shadow-card {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.shadow-card-hover {
+@utility shadow-card-hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.04);
 }
 
-.shadow-premium {
+@utility shadow-premium {
   box-shadow: 0 8px 32px rgba(212, 162, 76, 0.12), 0 2px 8px rgba(212, 162, 76, 0.06);
 }
 
-.image-glow {
+@utility image-glow {
   box-shadow: 0 0 40px rgba(212, 162, 76, 0.15);
 }
 
