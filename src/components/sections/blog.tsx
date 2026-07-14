@@ -26,13 +26,14 @@ export default function Blog() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <motion.article
+            <motion.div
               key={post.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2"
+              whileHover={{ y: -8 }}
+              className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -65,7 +66,7 @@ export default function Blog() {
                   Read More <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
-            </motion.article>
+            </motion.div>
           ))}
         </div>
       </div>
